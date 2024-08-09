@@ -1,0 +1,213 @@
+@media only screen and (max-width: 992px){
+    #navToggler {
+        display: block;
+        position: absolute;
+        top: 35px;
+        right: 5px;
+        background: none;
+        width: 40px;
+        border: 1px solid #c2bfbf;
+        padding: 5px;
+        padding-bottom: 1px;
+        border-radius: 5px;
+    }
+
+    #navToggler img{
+        width: 100%;
+    }
+
+    header nav .btn{
+        margin-right: 50px;
+    }
+
+    header nav ul.flex {
+        position: absolute;
+        right: 10px;
+        top: 85px;
+        gap: 10px;
+        border-radius: 5px;
+        width: 200px;
+        height: 0;
+        transition: .5s;
+        background: #ffeeeef7;
+        padding: 0 20px;
+        overflow: hidden;
+    }
+    
+    header nav ul li{
+        flex-basis: 100%;
+    }
+
+    header nav ul.open{
+        border: 1px solid #bfbebe;
+        height: 220px;
+        padding: 10px 20px;
+    }
+
+    .legalArea .areaWrap .singleArea{
+        padding: 20px;
+    }
+
+    .legalArea .areaWrap .singleArea p{
+        font-size: 14px;
+    }
+    
+    .faq .faqWrap .faqLeft article{
+        padding: 15px;
+    }
+
+    h4.subTitle {
+        font-size: 18px;
+    }
+
+    .contact .contactWrap > div {
+        flex-basis: calc(50% - 10px);
+    }
+
+    footer .footerWrap .footerItem{
+        flex-basis: 33%;
+        margin: 30px 0;
+    }
+
+    footer .footerWrap .footerItem:first-child{
+        flex-basis: 70%;
+    }
+}
+
+@media only screen and (max-width: 768px){
+    .banner .banner-content h1 {
+        font-size: 50px;
+    }
+
+    .legalArea .areaWrap{
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .faq .faqWrap {
+        margin: 40px auto;
+        flex-direction: column-reverse;
+        flex-wrap: nowrap;
+        gap: 45px;
+        max-width: 550px;
+    }
+    
+    .faq .faqWrap .faqRight{
+        padding: 0;
+    }
+
+    .contact .contactWrap {
+        flex-direction: column;
+        gap: 10px;
+        max-width: 550px;
+    }
+
+    .contact .contactWrap .contactRight form {
+        gap: 10px;
+    }
+
+    footer .footerWrap{
+        max-width: 550px;
+        margin: auto;
+    }
+    
+    footer .footerWrap .footerItem:nth-child(2){
+        flex-basis: 33%;
+    }
+
+    footer .footerWrap .footerItem{
+        flex-basis: calc(67% - 10px);
+    }
+
+    footer .footerWrap .footerItem:last-child{
+        flex-basis: 100%;
+    }
+}
+
+@media only screen and (max-width: 576px){
+    .titleBox h2{
+        font-size: 30px;
+    }
+
+    .container{
+        padding: 0 5px;
+    }
+
+    .banner{
+        padding: 50px 5px;
+    }
+
+    .btn {
+        padding: 5px 15px;
+    }
+
+    header {
+        padding: 15px 0;
+    }
+
+    header nav .logo{
+        flex-basis: 100%;
+        text-align: center;
+    }
+
+    header nav .btn {
+        margin-top: 10px;
+    }
+
+    #navToggler {
+        top: 70px;
+    }
+
+    header nav ul.flex {
+        top: 125px;
+    }
+
+    .banner .banner-content h1 {
+        font-size: 30px;
+    }
+
+    .banner .banner-content form input{
+        flex-basis: 100%;
+        margin-bottom: 10px;
+        padding: 18px 10px;
+    }
+
+    .legalArea .areaWrap{
+        grid-template-columns: 1fr;
+        max-width: 350px;
+        margin: 20px auto;
+    }
+
+    h4.subTitle {
+        font-size: 15px;
+    }
+
+    .faq .faqWrap .faqLeft article {
+        padding: 10px;
+    }
+
+    .faq .faqWrap .faqLeft article:not(:first-child) {
+        margin-top: 10px;
+    }
+
+    .contact .contactWrap {
+        max-width: 450px;
+    }
+
+    .contact .contactWrap .contactLeft{
+        grid-template-columns: 1fr;
+        background: none;
+        gap: 10px;
+    }
+
+    footer{
+        padding: 30px 0;
+    }
+
+    footer .footerWrap{
+        max-width: 350px;
+    }
+    
+    footer .footerWrap .footerItem:first-child{
+        flex-basis: 100%;
+    }
+}

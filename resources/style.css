@@ -1,0 +1,380 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+}
+
+input:focus, textarea:focus{
+    outline: 0;
+}
+
+.btn{
+    cursor: pointer;
+    border: none;
+    background: #8e5204;
+    padding: 10px 20px;
+    font-size: 19px;
+    color: #fff;
+    font-weight: 600;
+    border-radius: 5px;
+    line-height: 28px;
+}
+
+#navToggler{
+    display: none;
+}
+
+ul{
+    list-style: none;
+}
+
+.flex{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+section{
+    padding: 50px 0;
+}
+
+.container{
+    width: 1350px;
+    margin: auto;
+    max-width: 100%;
+    padding: 0 10px;
+}
+
+.titleBox{
+    text-align: center;
+    width: 650px;
+    margin: auto;
+    max-width: 100%;
+}
+
+.titleBox h2{
+    margin-bottom: 30px;
+    font-size: 35px;
+    color: #201d1d;
+}
+
+p{
+    font-size: 17px;
+    color: #313030;
+}
+
+h4.subTitle{
+    font-size: 22px;
+    color: #1f1515;
+}
+
+
+header{
+    padding: 30px 0;
+    position: relative;
+}
+
+header nav ul{
+    gap: 30px;
+    align-items: center;
+}
+
+header nav ul li a{
+    font-size: 18px;
+    color: #646464;
+}
+
+.banner {
+    background: linear-gradient(14deg, #271f1fe3, #1d1a1a82), url(imgs/banner.png) no-repeat;
+    background-position: center;
+    background-size: cover;
+    border-radius: 10px;
+    margin-top: 50px;
+    padding: 100px 5px;
+}
+
+.banner .banner-content h1{
+    color: #ffff;
+    font-size: 70px;
+}
+
+.banner .banner-content {
+    width: 640px;
+    margin: auto;
+    text-align: center;
+    max-width: 100%;
+}
+
+.banner .banner-content p{
+    font-size: 17px;
+    color: #e8e3e3;
+    margin: 40px 0;
+}
+
+.banner .banner-content form input {
+    flex-basis: calc(100% - 130px);
+    border-radius: 5px;
+    border: none;
+    padding: 10px;
+    font-size: 14px;
+    background: #fffffff2;
+}
+
+.banner .banner-content form button.btn{
+    padding: 10px 25px;
+    background: #c47713;
+}
+
+.legalArea .areaWrap{
+    margin-top: 40px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    text-align: center;
+    background: #e0e0e0;
+    gap: 1px;
+}
+
+.legalArea .areaWrap .singleArea{
+    padding: 20px 50px;
+    background: #fff;
+}
+
+.legalArea .areaWrap .singleArea h3{
+    font-size: 24px;
+    margin: 15px 0;
+}
+
+.legalArea .areaWrap .singleArea p{
+    margin-bottom: 15px;
+}
+
+.review{
+    text-align: center;
+}
+
+.review .slides{
+    border-radius: 10px;
+    width: 100%;
+}
+
+.review .sr-slide-wrap .slides .single-slide .slide-contents {
+    height: auto;
+    position: absolute;
+    top: 80px;
+    left: 50%;
+    width: 850px;
+    transform: translateX(-50%);
+    max-width: 100%;
+    padding: 0 10px;
+}
+
+.review .sr-slide-wrap .slides .single-slide .bgImage::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #181717a2;
+}
+
+.review .slide-contents .thumb{
+    width: 80px;
+    height: 80px;
+    border: 5px solid #fff;
+    border-radius: 50%;
+    margin: auto;
+}
+
+.review .slide-contents .thumb img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.review .slide-contents h4{
+    font-size: 22px;
+    margin-top: 20px;
+}
+
+.review .slide-contents h6{
+    font-size: 14px;
+    color: #d3d1d1;
+    margin-bottom: 30px;
+}
+
+.review .slide-contents p{
+    color: #e3e4ea;
+}
+
+.faq{}
+
+.faq .faqWrap{
+    margin-top: 40px;
+}
+
+.faq .faqWrap .faqLeft{
+    flex-basis: 50%;
+}
+
+.faq .faqWrap .faqLeft article{
+    padding: 20px;
+    border-radius: 8px;
+    background: #f5f2f2;
+}
+
+.faq .faqWrap .faqLeft article:not(:first-child){
+    margin-top: 20px;
+}
+
+.faq .faqWrap .faqLeft article .question{
+    align-items: center;
+}
+
+.faq .faqWrap .faqLeft article .question h4{
+    flex-basis: calc(100% - 20px);
+}
+
+.faq .faqWrap .faqLeft article .question button {
+    width: 15px;
+    height: 15px;
+    border: none;
+    position: relative;
+    cursor: pointer;
+}
+
+.faq .faqWrap .faqLeft article .question button::before,
+.faq .faqWrap .faqLeft article .question button::after{
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #232222;
+    width: 100%;
+    height: 1px;
+    transition: .2s;
+}
+
+.faq .faqWrap .faqLeft article .question button::after{
+    height: 100%;
+    width: 1px;
+}
+
+.faq .faqWrap .faqLeft article.active .question button::after{
+    transform: translate(-50%, -50%) rotate(90deg);
+}
+
+.faq .faqWrap .faqLeft article .answer{
+    height: 0;
+    overflow: hidden;
+    transition: .5s;
+}
+
+.faq .faqWrap .faqRight{
+    flex-basis: 50%;
+    padding-left: 20px;
+}
+
+.faq .faqWrap .faqRight img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.contact{}
+
+.contact .contactWrap{
+    margin: 40px auto;
+}
+
+.contact .contactWrap > div{
+    flex-basis: calc(50% - 20px);
+}
+
+.contact .contactWrap .contactLeft {
+    background: #d8d5d5;
+    gap: 1px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    text-align: center;
+}
+
+.contact .contactWrap .contactLeft .conDetails{
+    background: #faf4f4;
+    padding: 50px 10px;
+}
+
+.contact .contactWrap .contactLeft .conDetails h4{
+    margin: 15px 0;
+}
+
+.contact .contactWrap .contactRight form{
+    flex-direction: column;
+    height: 100%;
+}
+
+.contact .contactWrap .contactRight input,
+.contact .contactWrap .contactRight textarea {
+    background: #faf4f4;
+    padding: 20px;
+    border-radius: 5px;
+    border: none;
+    font-size: 17px;
+}
+
+.contact .contactWrap .contactRight button{
+    padding: 20px 0;
+}
+
+footer{
+    background: #1b1717;
+    padding: 80px 0;
+}
+
+footer .footerWrap .footerItem {
+    flex-basis: calc(25% - 10px);
+}
+
+footer .footerWrap .footerItem h4.subTitle{
+    color: #d4d1d1;
+}
+
+footer .footerWrap .footerItem ul,
+footer .footerWrap .footerItem p,
+footer .footerWrap .footerItem address{
+    margin-top: 30px;
+    color: #b1b1b3;
+}
+
+footer .footerWrap .footerItem address p:not(:first-child){
+    margin-top: 15px;
+}
+
+footer .footerWrap .footerItem a{
+    color: #b1b1b3;
+    margin: 10px 0;
+    display: block;
+}
+
+footer .footerWrap .footerItem form {
+    margin-top: 20px;
+}
+
+footer .footerWrap .footerItem form input {
+    border-radius: 5px 0 0 5px;
+    padding: 10px;
+    border: none;
+    width: calc(100% - 60px);
+}
+
+footer .footerWrap .footerItem form button {
+    padding: 5px 10px;
+    padding-bottom: 0;
+    border-radius: 0 5px 5px 0;
+}
