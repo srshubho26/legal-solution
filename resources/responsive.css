@@ -47,10 +47,6 @@
     .legalArea .areaWrap .singleArea{
         padding: 20px;
     }
-
-    .legalArea .areaWrap .singleArea p{
-        font-size: 14px;
-    }
     
     .faq .faqWrap .faqLeft article{
         padding: 15px;
@@ -178,7 +174,7 @@
     }
 
     h4.subTitle {
-        font-size: 15px;
+        font-size: 13px;
     }
 
     .faq .faqWrap .faqLeft article {
